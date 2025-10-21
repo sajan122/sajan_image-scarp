@@ -58,7 +58,7 @@ def index():
                                 img_data.append(mydict)
                                 with open(os.path.join(save_directory, f"{query}_{image_tags.index(image_tag)}.jpg"), "wb") as f:
                                     f.write(image_data)
-                    client = pymongo.MongoClient("mongodb+srv://sajan:Sajan%40123@cluster0.5u8yykc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+                    client = pymongo.MongoClient("mongodb+srv://snshrivas:Snshrivas@cluster0.ln0bt5m.mongodb.net/?retryWrites=true&w=majority")
                     db = client['image_scrap']
                     review_col = db['image_scrap_data']
                     review_col.insert_many(img_data)          
@@ -74,4 +74,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8000) #8000 to http://127.0.0.1:8000 nahi port nahi dekha to http://127.0.0.1:5000 lekh do matlab port number dena hoga last me
+    app.run(host='0.0.0.0', port=8000)
