@@ -60,3 +60,592 @@ INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 13:44:38] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 13:44:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 13:44:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 13:45:44] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.235.42.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 15:43:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 15:43:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 15:43:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 15:43:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /review [POST]
+Traceback (most recent call last):
+  File "C:\Users\frontech\.conda\envs\mynewenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\frontech\.conda\envs\mynewenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\frontech\.conda\envs\mynewenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\frontech\.conda\envs\mynewenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+TypeError: The view function for 'index' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 15:44:14] "[35m[1mPOST /review HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.235.42.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_0.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_4.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_3.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_5.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_6.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_7.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_8.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_9.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_10.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_11.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_12.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_13.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_14.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_15.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_16.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_17.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_18.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:58:47] "[33mGET /images/elonmusk_19.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_0.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_4.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_5.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_6.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_3.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_11.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_16.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_9.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_17.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_14.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_8.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_10.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_19.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_18.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_12.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_7.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_13.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 16:59:34] "[33mGET /images/elonmusk_15.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_0.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_3.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_4.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_5.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_6.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_7.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_8.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_9.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_10.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_11.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_12.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_13.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_14.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_15.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_16.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_17.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_18.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:00:09] "[33mGET /images/bantykumar_19.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.235.42.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_0.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_1.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_3.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_4.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_5.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_7.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_10.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_12.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_11.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_14.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_8.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_9.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_13.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_6.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_15.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_16.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_17.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_18.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Oct/2025 17:22:23] "[33mGET /images/elonmusk_19.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:51:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:51:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:51:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:51:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:24] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:52:25] "GET /static/images/readmi_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 04:57:30] "GET /static/images/iphone11_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:32] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:06:51] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:56] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:14:57] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:15:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:26:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:26:54] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:26:54] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:26:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.121.212.103 - - [22/Oct/2025 05:27:18] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:27:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:27:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:27:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:47:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:47:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:47:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:47:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:48:11] "GET /static/images/sajankumar_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:54:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:54:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:54:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:55:14] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.121.212.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 05:58:58] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.231.5.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:41:37] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.103 - - [22/Oct/2025 06:47:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.103 - - [22/Oct/2025 06:47:52] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.103 - - [22/Oct/2025 06:47:52] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.103 - - [22/Oct/2025 06:47:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:48:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:48:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 06:48:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:51:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:51:29] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:51:29] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:51:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:51:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:51:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:51:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:52:29] "GET /static/images/SajanKumar_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 06:53:17] "GET /static/images/SajanKumar_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.231.5.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:15:32] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.231.5.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:30:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:30:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:30:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2025 07:31:05] "GET /static/images/elonmusk_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.231.5.103:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:00:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:00:24] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:00:24] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:00:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:01:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:01:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:01:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:01:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:01:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:01:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:01:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:HTTPSConnectionPool(host='encrypted-tbn0.gstatic.com', port=443): Read timed out. (read timeout=None)
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:02:27] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:02:59] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:02:59] "GET /static/images/iPhone_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:02:59] "GET /static/images/iPhone_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_18.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_19.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:00] "GET /static/images/iPhone_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:16] "GET /static/images/iPhone_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:03:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_0.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_7.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_4.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_9.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_8.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_10.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_11.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_13.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_14.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_15.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_16.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:17] "GET /static/images/SajanKumar_17.jpg HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:10.231.5.191 - - [22/Oct/2025 08:04:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

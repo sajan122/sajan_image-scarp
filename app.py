@@ -23,11 +23,12 @@ def index():
                     query = request.form['content'].replace(" ","")
 
                             # directory to store downloaded images
-                    save_directory = "images/"
+                    save_directory = "static/images/" #Agar tum Flask ke static folder me floder rakhna chahte ho (taaki browser se directly show karwana cahate ho to tume  photo ko tume static ande rakhan hoga ) "static/images/" folder ke ander folder
+
 
                             # create the directory if it doesn't exist
                     if not os.path.exists(save_directory):
-                        os.makedirs(save_directory)
+                        os.makedirs(save_directory) #folder makir  matlab uya ki ager ho hai do thik nahi to bana  degega 
 
 
 
@@ -35,8 +36,7 @@ def index():
                     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"}
 
                             # fetch the search results page
-                    response = requests.get(f"https://www.google.com/search?q={query}&sxsrf=AJOqlzUuff1RXi2mm8I_OqOwT9VjfIDL7w:1676996143273&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiq-qK7gaf9AhXUgVYBHYReAfYQ_AUoA3oECAEQBQ&biw=1920&bih=937&dpr=1#imgrc=1th7VhSesfMJ4M")
-
+                    response = requests.get (f"https://www.google.com/search?q={query}&sca_esv=825d6cf8198b9510&udm=2&biw=2133&bih=1058&sxsrf=AE3TifNzh3VunnRkjWCO2Rbb1un8nzOyHw%3A1760955290480&ei=mgv2aIuJHce74-EPo_W1iAI&ved=0ahUKEwiLvrfUxbKQAxXH3TgGHaN6DSEQ4dUDCBE&oq=sudhanshu+kumar&gs_lp=Egtnd3Mtd2l6LWltZyIPc3VkaGFuc2h1IGt1bWFyMgcQIxgnGMkCMgYQABgHGB4yBhAAGAcYHjIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkjHDVAAWABwAXgAkAEAmAEAoAEAqgEAuAEMyAEAmAIBoAIYmAMAiAYBkgcBMaAHALIHALgHAMIHAzQtMcgHEw&sclient=gws-wiz-img") #Yeh sirf(only) first page ka HTML lata hai. requests.get” se poore Google Images nahi milenge.
 
                             # parse the HTML using BeautifulSoup
                     soup = BeautifulSoup(response.content, "html.parser")
@@ -46,7 +46,8 @@ def index():
 
                             # download each image and save it to the specified directory
                     del image_tags[0]
-                    img_data=[]
+                    img_data=[]  # sirf store mongodb me karne ke liye ye use hota hai 
+                    image_files = [] 
                     for index,image_tag in enumerate(image_tags):
                                 # get the image source URL
                                 image_url = image_tag['src']
@@ -56,17 +57,22 @@ def index():
                                 image_data = requests.get(image_url).content
                                 mydict={"Index":index,"Image":image_data}
                                 img_data.append(mydict)
-                                with open(os.path.join(save_directory, f"{query}_{image_tags.index(image_tag)}.jpg"), "wb") as f:
-                                    f.write(image_data)
-                    client = pymongo.MongoClient("mongodb+srv://sajan:Sajan%40123@cluster0.5u8yykc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+                                filename = f"{query}_{image_tags.index(image_tag)}.jpg"   #"cat_0.jpg" jo src return(store ho rah hai)  kon index par hai o dedo
+                        
+                                with open(os.path.join(save_directory, filename), "wb") as f: 
+                                     f.write(image_data)
+       
+                                                       
+                                image_files.append(filename)                       
+                    client = pymongo.MongoClient("mongodb+srv://sajan:Sajan%40123@cluster0.5u8yykc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # sirf store mongodb me karne ke liye ye use hota hai 
                     db = client['image_scrap']
                     review_col = db['image_scrap_data']
                     review_col.insert_many(img_data)          
 
-                    return "image laoded"
+                    return render_template("result.html",image_files=image_files,query=query)
                 except Exception as e:
                     logging.info(e)
-                    return 'something is wrong'
+                    return'something is wrong'
             # return render_template('results.html')
 
     else:

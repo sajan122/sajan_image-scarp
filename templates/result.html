@@ -1,47 +1,167 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Review Page</title>
+<meta charset="UTF-8">
+<title>Image Results</title>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
 
-      <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+.image-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
 
+.image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
 
+.image-box img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+/* 🔹 Fullscreen Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Buttons overlay like Google */
+.btn-row {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.close-btn, .download-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover, .download-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+</style>
 </head>
-
 <body>
 
-  <div class="table-users">
-   <div class="header">Reviews</div>
-
-   <table cellspacing="0">
-      <tr>
-         <th>Product</th>
-         <th>Name</th>
-         <th>Rating</th>
-         <th>Comment Heading</th>
-         <th>mycomment </th>
-         <th width="230">Comments</th>
-      </tr>
-         {% for review in reviews %}
-      <tr>
-          <td>{{review['Product']}}</td>
-         <td>{{review['Name']}}</td>
-         <td>{{review['Rating']}}</td>
-         <td>{{review['CommentHead']}}</td>
-         <td>{{review['Comment']}} </td>
-         <td>{{review['Comment']}} </td>
-       {% endfor %}
-   </table>
+<h1>Images for "{{ query }}"</h1>
+<div class="container">
+    {% for file in image_files %}
+    <div class="image-box">
+        <img src="{{ url_for('static', filename='images/' + file) }}" 
+             alt="{{ file }}" 
+             onclick="openModal('{{ url_for('static', filename='images/' + file) }}')">
+    </div>
+    {% endfor %}
 </div>
 
+<footer>© 2025 Flask Image Scraper | Designed by Sajan 💻</footer>
 
+<!-- Fullscreen Modal -->
+<div id="imageModal" class="modal">
+    <img id="modalImage">
+    <div class="btn-row">
+        <a id="downloadBtn" class="download-btn" download>⬇ Download</a>
+        <button class="close-btn" onclick="closeModal()">Close ×</button>
+    </div>
+</div>
+
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const downloadBtn = document.getElementById("downloadBtn");
+
+function openModal(src){
+    modal.style.display = "flex";
+    modalImg.src = src;
+    downloadBtn.href = src;
+    downloadBtn.download = src.split('/').pop();
+}
+
+function closeModal(){
+    modal.style.display = "none";
+}
+
+// Close modal when clicking outside image
+modal.addEventListener('click', e => {
+    if(e.target === modal) closeModal();
+});
+
+// Close modal on ESC
+document.addEventListener('keydown', e => {
+    if(e.key === "Escape") closeModal();
+});
+</script>
 
 </body>
-
 </html>
